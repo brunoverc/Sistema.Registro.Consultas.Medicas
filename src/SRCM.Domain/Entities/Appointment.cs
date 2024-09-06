@@ -10,7 +10,8 @@ namespace SRCM.Domain.Entities
 {
     public class Appointment : Entity
     {
-        public Appointment (Guid idDoctor, Guid idPatient, AppointmentType type, string observation) {
+        public Appointment(Guid idDoctor, Guid idPatient, AppointmentType type, string observation)
+        {
             IdDoctor = idDoctor;
             IdPatient = idPatient;
             Type = type;

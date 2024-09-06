@@ -35,6 +35,6 @@ namespace SRCM.Domain.Entities
         public DateTime Birthday { get; private set; }
         public Specialties Specialty { get; private set; }
 
-        public Address adress { get; private set; }
+        public Address Address { get; private set; }
     }
 }
