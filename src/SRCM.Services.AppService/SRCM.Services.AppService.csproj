@@ -6,4 +6,20 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="DTOs\" />
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SRCM.Core\SRCM.Core.csproj" />
+    <ProjectReference Include="..\SRCM.Domain.Shared\SRCM.Domain.Shared.csproj" />
+    <ProjectReference Include="..\SRCM.Domain\SRCM.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

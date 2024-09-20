@@ -13,7 +13,7 @@ namespace SRCM.Infra.Data.Mapping
             builder.Property(address => address.Number).HasMaxLength(5);
             builder.Property(address => address.Complement).HasMaxLength(150);
             builder.Property(address => address.Neighborhood).HasMaxLength(50).IsRequired();
-            builder.Property(address => address.PostalCode).HasMaxLength(9).IsRequired();
+            builder.Property(address => address.PostalCode).HasMaxLength(9);
             builder.Property(address => address.City).HasMaxLength(25).IsRequired();
             builder.Property(address => address.State).HasMaxLength(2).IsRequired();
 

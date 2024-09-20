@@ -1,11 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using SRCM.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SRCM.Infra.Data.Mapping
 {
@@ -20,6 +15,7 @@ namespace SRCM.Infra.Data.Mapping
             builder.Property(appsch => appsch.CarteiraTrabalho).HasMaxLength(10).IsRequired();
             builder.Property(appsch => appsch.Email).HasMaxLength(100).IsRequired();
             builder.Property(appsch => appsch.AddressId).IsRequired();
+            builder.Property(appsch => appsch.Position).IsRequired();
 
             builder.HasKey(appsch => appsch.Id);
         }
