@@ -14,8 +14,8 @@ namespace SRCM.Services.AppService.Interfaces
         PatientViewModel GetById(Guid id);
         IEnumerable<PatientViewModel> Search(Expression<Func<Patient, bool>> expression);
         IEnumerable<PatientViewModel> Search(Expression<Func<Patient, bool>> expression, int pageNumber, int pageSize);
-        AppointmentViewModel Add(PatientViewModel viewModel);
-        AppointmentViewModel Update(PatientViewModel viewModel);
+        PatientViewModel Add(PatientViewModel viewModel);
+        PatientViewModel Update(PatientViewModel viewModel);
         void Remove(Guid id);
         void Remove(Expression<Func<Patient, bool>> expression);
     }
