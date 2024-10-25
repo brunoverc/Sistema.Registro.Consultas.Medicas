@@ -41,6 +41,7 @@
   <ItemGroup>
     <ProjectReference Include="..\SRCM.Core\SRCM.Core.csproj" />
     <ProjectReference Include="..\SRCM.Domain\SRCM.Domain.csproj" />
+    <ProjectReference Include="..\SRCM.Infra.Identity\SRCM.Infra.Identity.csproj" />
     <ProjectReference Include="..\SRCM.Services.AppService\SRCM.Services.AppService.csproj" />
   </ItemGroup>
 

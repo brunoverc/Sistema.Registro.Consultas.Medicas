@@ -14,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SRCM.Infra.Data\SRCM.Infra.Data.csproj" />
     <ProjectReference Include="..\SRCM.Services.AppService\SRCM.Services.AppService.csproj" />
   </ItemGroup>
 
