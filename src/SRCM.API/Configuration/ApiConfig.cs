@@ -1,11 +1,8 @@
 ﻿
 using SRCM.Services.AppService.AutoMapper;
 using Serilog;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Configuration;
-using Microsoft.AspNetCore.Builder;
 
-namespace SRCM.Infra.Identity.Configurations
+namespace SRCM.API.Configuration
 {
     public static class ApiConfig
     {
@@ -19,7 +16,7 @@ namespace SRCM.Infra.Identity.Configurations
 
             services.AddControllers();
             services.AddAuthentication(configuration);
-            services.RegisterService();
+            services.RegisterServices();
             AddJwtConfiguration(services);
 
             services.AddSwaggerGen();
